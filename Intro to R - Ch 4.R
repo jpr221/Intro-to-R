@@ -6,27 +6,38 @@
 ## Variable Assignment Examples
 
 # Numeric
+# run (Ctr-Enter) on line 11 and "7" appears in Environment
+# can also select multiple lines at once
 x = 7
 
 # Use better assignment operator
+# use "<-" as the assignment operator
+# use "=" for logical tests and parameter specification
 y <- 8
 
 # Using "=" for all things
+# this returns an error
 relationship = lm(formula=y~x)
 
 # Using "<-" for assignment
+# also an error
 relationship <- lm(formula=y~x)
 
 # Display value of x in console
+# the first number is the number of values x has and the second tells us what the value is
 x
 
 # Looking at the attributes of X
+# numeric class
+# double precision
 class(x)
 typeof(x)
 length(x)
 attributes(x)
 
 # Assigning a value as an integer
+# can assign as an integer by putting "L" after assigning a variable
+# useful for large data sets
 y <- 8L
 class (y)
 
